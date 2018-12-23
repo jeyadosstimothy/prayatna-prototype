@@ -1,3 +1,52 @@
+@media only screen and (max-width: 1024px/*68em*/) {
+  #header,
+  .my-arrow {
+    display: none;
+  }
+}
+#header {
+  width: 100%;
+  height: 3rem;
+  top: 0px;
+  position: absolute;
+  z-index: 999;
+  padding-top: 10px;
+}
+#header-content {
+  float: right;
+}
+#header-content h5 {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#header-content h5 > a {
+  position: relative;
+  text-decoration: none;
+  color: #f0f0f0;
+}
+#header-content h5 > a:hover {
+  color: #f0f0f0;
+}
+#header-content h5 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  bottom: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#header-content h5 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 .section{
   text-align:center;
 }
@@ -9,15 +58,24 @@
 .intro h1{
   -webkit-text-shadow: 0 .3rem .9rem rgba(0,0,0,.8);
   text-shadow: 0 .3rem 0.9rem rgba(0,0,0,.8);
-  font-size: 10vw;
+  font-size: 8rem;
 }
 .intro h2{
   text-shadow: -1px 1px 8px rgba(0,0,0,.8);
-  font-size: 8vw;
+  font-size: 6rem;
 }
 .intro h3{
   text-shadow: -1px 1px 8px rgba(0,0,0,.8);
-  font-size: 3vw;
+  font-size: 4rem;
+}
+.intro h4{
+  text-shadow: -1px 1px 8px rgba(0,0,0,.8);
+  font-size: 2.5rem;
+}
+h5{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: -1px 1px 8px rgba(0,0,0,.8);
+  font-size: 1.5rem;
 }
 #section0 .fp-bg:before,
 #section3 .fp-bg:before{
@@ -63,26 +121,28 @@
 }
 
 .my-arrow svg {
-  padding:5px
+  padding: 5px;
+  width: 4rem;
+  height: 4rem;
 }
 .my-arrow {
   cursor:pointer;
   position:absolute;
-  top:50%;
+  top:51.5%;
   margin-top:-45px;
-  width:70px;
-  height:90px;
+  width:5rem;
+  height:5rem;
   z-index:99;
   -webkit-appearance:none;
   background:0 0;
   border:0;
-  outline:0
+  outline:0;
 }
 .my-arrow.left {
-  left:0px
+  left:0px;
 }
 .my-arrow.right {
-  right:45px
+  right:1.5rem;
 }
 polyline {
   stroke-width:3
@@ -102,5 +162,5 @@ polyline {
   transition:all .1s ease-in-out
 }
 polyline {
-  transition:all 250ms ease-in-out
+  transition:all 250ms ease-in-out;
 }
