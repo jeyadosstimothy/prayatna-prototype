@@ -1,0 +1,106 @@
+.section{
+  text-align:center;
+}
+.intro{
+  color: #f0f0f0;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 3px;
+}
+.intro h1{
+  -webkit-text-shadow: 0 .3rem .9rem rgba(0,0,0,.8);
+  text-shadow: 0 .3rem 0.9rem rgba(0,0,0,.8);
+  font-size: 10vw;
+}
+.intro h2{
+  text-shadow: -1px 1px 8px rgba(0,0,0,.8);
+  font-size: 8vw;
+}
+.intro h3{
+  text-shadow: -1px 1px 8px rgba(0,0,0,.8);
+  font-size: 3vw;
+}
+#section0 .fp-bg:before,
+#section3 .fp-bg:before{
+  content: '';
+  position: absolute;
+  display: block;
+  background: rgba(173, 173, 173, 0.2);
+  top:0;
+  bottom:0;
+  height: 100%;
+  width: 100%;
+}
+.fp-bg{
+  background-size: cover;
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  backface-visibility: hidden;
+}
+#section0 {
+  background-image: url("../res/section0.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#section1 {
+  background-image: url("../res/section1.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#section2 {
+  background-image: url("../res/section2.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#section3 {
+  background-image: url("../res/section3.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#section4 {
+  background-image: url("../res/section4.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.my-arrow svg {
+  padding:5px
+}
+.my-arrow {
+  cursor:pointer;
+  position:absolute;
+  top:50%;
+  margin-top:-45px;
+  width:70px;
+  height:90px;
+  z-index:99;
+  -webkit-appearance:none;
+  background:0 0;
+  border:0;
+  outline:0
+}
+.my-arrow.left {
+  left:0px
+}
+.my-arrow.right {
+  right:45px
+}
+polyline {
+  stroke-width:3
+}
+.my-arrow.left:focus polyline,.my-arrow.left:hover polyline {
+  stroke-width:6
+}
+.my-arrow.left:active polyline {
+  stroke-width:10;
+  transition:all .1s ease-in-out
+}
+.my-arrow.right:focus polyline,.my-arrow.right:hover polyline {
+  stroke-width:6
+}
+.my-arrow.right:active polyline {
+  stroke-width:10;
+  transition:all .1s ease-in-out
+}
+polyline {
+  transition:all 250ms ease-in-out
+}

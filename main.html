@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Prayatna</title>
+  <link rel="stylesheet" type="text/css" href="static/css/fullpage.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+</head>
+<body>
+  <div id="fullpage">
+    <div class="section active" id="section0">
+      <div class="intro">
+        <h1>PRAYATNA '19</h1>
+        <div class="slider">
+          <h3>Ignite. Inspire. Innovate.</h3>
+          <h3>March 8 & 9</h3>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section1">
+        <button class="my-arrow left">
+            <svg width="60px" height="80px" viewbox="0 0 50 80" xml:space="preserve">
+                <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                    45.63,75.8 0.375,38.087 45.63,0.375 ">
+            </polyline></svg>
+        </button>
+        <button class="my-arrow right">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewbox="0 0 50 80" xml:space="preserve">
+                <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 ">
+            </polyline></svg>
+        </button>
+        <div class="slide">
+          <div class="intro">
+            <h2>Events</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="intro">
+            <h2>Technical Events</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="intro">
+            <h2>Non Technical Events</h2>
+          </div>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <button class="my-arrow left">
+            <svg width="60px" height="80px" viewbox="0 0 50 80" xml:space="preserve">
+                <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                    45.63,75.8 0.375,38.087 45.63,0.375 ">
+            </polyline></svg>
+        </button>
+        <button class="my-arrow right">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewbox="0 0 50 80" xml:space="preserve">
+                <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 ">
+            </polyline></svg>
+        </button>
+        <div class="slide">
+          <div class="intro">
+            <h2>Workshops</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="intro">
+            <h2>Workshop 1</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="intro">
+            <h2>Workshop 2</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="intro">
+            <h2>Workshop 3</h2>
+          </div>
+        </div>
+    </div>
+    <div class="section" id="section3">
+      <div class="intro">
+        <h2>Register Now</h2>
+      </div>
+    </div>
+    <div class="section" id="section4">
+      <div class="intro">
+        <h2>Contact us</h2>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="static/js/fullpage.js"></script>
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      anchors: ['home', 'events', 'workshop', 'register', 'contact'],
+      navigation: true,
+      navigationTooltips: ['Home', 'Events', 'Workshops', 'Register', 'Contact Us'],
+      slidesNavigation: true,
+      controlArrows: false,
+      lockAnchors: true
+    });
+  </script>
+  <script type="text/javascript">
+    $('.my-arrow').click(function() {
+      this.classList.contains("left") ? fullpage_api.moveSlideLeft() : fullpage_api.moveSlideRight()
+    });
+    $('.slider').slick({
+      vertical: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+    });
+  </script>
+</body>
+</html>
